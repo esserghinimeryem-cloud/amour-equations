@@ -15,22 +15,23 @@ st.set_page_config(
 )
 
 st.title("❤️ L'amour en équations")
-st.markdown("""
-### Portrait de phase interactif du modèle de Rey (2010)
+st.markdown("### Portrait de phase interactif du modèle de Rey (2010)")
 
-Ce modèle décrit l'évolution d'un couple à travers deux variables :
-- $x(t)$ : le niveau de sentiment commun
-- $\\lambda(t)$ : la variable adjointe (liée à l'effort optimal)
+st.markdown("Ce modèle décrit l'évolution d'un couple à travers "
+            "deux variables :")
+st.markdown("- **x(t)** : le niveau de sentiment commun")
+st.markdown("- **λ(t)** : la variable adjointe (liée à l'effort optimal)")
 
-Le système dynamique optimal est :
-$$\\frac{dx}{dt} = -rx + \\Phi(\\lambda), \\quad 
-\\frac{d\\lambda}{dt} = (r+\\rho)\\lambda - U'(x)$$
+st.markdown("Le système dynamique optimal est :")
 
-avec $U(x) = 5\\log(1+x)$ et $D(c) = \\frac{1}{2}|c-\\bar{c}|^2$.
+st.latex(r"\frac{dx}{dt} = -rx + \Phi(\lambda), \quad "
+         r"\frac{d\lambda}{dt} = (r+\rho)\lambda - U'(x)")
 
-> *Paramètres de référence tirés de : Rey J-M (2010), PLoS ONE 5(3): e9881 
-et Chazel F. (2025), Bureau d'études 3MIC-MA, INSA Toulouse.*
-""")
+st.markdown("avec **U(x) = 5·log(1+x)** et **D(c) = ½|c - c̄|²")
+
+st.info("Paramètres de référence tirés de : Rey J-M (2010), "
+        "PLoS ONE 5(3): e9881 et Chazel F. (2025), "
+        "Bureau d'études 3MIC-MA, INSA Toulouse.")
 
 st.markdown("---")
 
