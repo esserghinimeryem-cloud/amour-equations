@@ -15,7 +15,7 @@ st.set_page_config(
 )
 
 st.title("❤️ L'amour en équations")
-st.markdown("### Portrait de phase interactif du modèle de Rey (2010)")
+st.markdown("### Portrait de phase interactif")
 
 st.markdown("Ce modèle décrit l'évolution d'un couple à travers "
             "deux variables :")
@@ -28,10 +28,6 @@ st.latex(r"\frac{dx}{dt} = -rx + \Phi(\lambda), \quad "
          r"\frac{d\lambda}{dt} = (r+\rho)\lambda - U'(x)")
 
 st.markdown("avec **U(x) = 5·log(1+x)** et **D(c) = ½|c - c̄|²")
-
-st.info("Paramètres de référence tirés de : Rey J-M (2010), "
-        "PLoS ONE 5(3): e9881 et Chazel F. (2025), "
-        "Bureau d'études 3MIC-MA, INSA Toulouse.")
 
 st.markdown("---")
 
